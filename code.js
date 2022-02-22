@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Hey! Pssst! In here ...
   new App('#grid', '#buttons', '#totals').run()
+  new App('#grid2', '#buttons2', '#totals2').run()
 });
 
 /**
