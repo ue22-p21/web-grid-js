@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initialCleanup();
 
   // Hey! Pssst! In here ...
-  new App('#grid', '#buttons', '#totals').run()
-  new App('#grid2', '#buttons2', '#totals2').run()
+  new GridApp('#grid', '#buttons', '#totals').run()
+  new GridApp('#grid2', '#buttons2', '#totals2').run()
 });
 
 /**
@@ -33,7 +33,7 @@ const BLUE = '#blue'
 const TOTAL = '#total'
 
 
-class App {
+class GridApp {
   constructor(s_grid, s_buttons, s_totals) {
     this.grid = document.querySelector(s_grid)
     this.buttons = document.querySelector(s_buttons)
